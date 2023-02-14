@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7</title>
+</head>
+<body>
+   <p> Задача 7. Знайти суму випадкового номера місяця (від 1 до 12) та випадкового номера дня (від 0 до 6).</p>
+    <script>
+        const firstMinNum = 1, firstMaxNum = 12, secondMinNum = 0, secondMaxNum = 6
+
+        let randomMonthNum = firstMinNum + Math.floor(Math.random()) * (firstMaxNum - firstMinNum + 1)
+        let randomDayNum = secondMinNum + Math.floor(Math.random()) * (secondMaxNum - secondMinNum + 1)
+        let totalAmountOfRandoms = randomMonthNum + randomDayNum
+
+        document.write(`
+        <h3>Your lucky number for this Month: ${randomMonthNum}</h3>
+        <br>
+        <h3>Your lucky number for this Day: ${randomDayNum}</h3>
+        <br>
+        <h3>Total of these two numbers: ${totalAmountOfRandoms}</h3>
+        `)
+    </script>
+</body>
+</html>

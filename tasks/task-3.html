@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <style>
+        h5 {
+            font-weight: 400;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+<p> Задача 3. Дано вартість одиниці товару і кількість. Знайти загальну вартість та ПДВ (5% від загальної вартості).</p>
+
+<script>
+    function calculateTotalPriceAndTaxes() {
+    let itemPrice = parseFloat(prompt("Enter \item's\ price: ", "0 $"))
+    let itemQuantity = parseInt(prompt("Enter \item's\ quantity: ", "0"))
+
+    let totalPrice = itemPrice * itemQuantity
+    let taxRate = totalPrice * 0.05
+    let grandTotal = totalPrice + taxRate
+
+    document.write(`<h5>Total price before taxes= ${totalPrice.toFixed (2)} $</h5>`)
+    document.write(`<h5>GST = ${taxRate.toFixed (2)} $</h5>`)
+    document.write(`<h5>Total price after taxes= ${grandTotal.toFixed (2)} $</h5>`)
+    }
+
+    calculateTotalPriceAndTaxes()
+</script>
+</body>
+</html>

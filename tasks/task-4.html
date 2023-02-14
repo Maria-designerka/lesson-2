@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+</head>
+<body>
+<p> Задача 4. Дано довжину у сантиметрах. Визначати скільки це метрів і кілометрів. </p>
+
+ <script>
+    let centimeter = parseInt(prompt('How many centimeters is your foot?: ', '22 cm'))
+
+    let meter = (centimeter*0.01).toFixed (2)
+    let kilometer = (meter*0.001).toFixed (5)
+
+    document.write(`<h5>Your foot length in cm: ${centimeter} cm</h5>`)
+    document.write(`<h5>Your foot length in m: ${meter} m</h5>`)
+    document.write(`<h5>Your foot length in km: ${kilometer} km</h5>`)
+
+
+ </script>
+</body>
+</html>

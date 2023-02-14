@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 0</title>
+    
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          width: 50%;
+          border-collapse: collapse;
+          table-layout: fixed;
+        }
+        td {
+            text-align: center;
+        }
+        </style>
+</head>
+<body>
+    <p>Задача 0. Обчислити значення виразів</p>
+    <img src="task-0-image.png" alt="image" width="10%">
+    <br>
+    <script>
+        // Задача 0. Обчислити значення виразів
+        let a = parseFloat(prompt("Enter a number for a", "0"))
+        let b = parseFloat(prompt("Enter a number for b", "0"))
+        let c = parseFloat(prompt("Enter a number for c", "0"))
+        
+        
+        let S1 = a+12+b
+        let S2 = Math.sqrt((a+b)/(2*a))
+        let S3 = Math.cbrt((a+b)/c)
+        let S4 = Math.sin(a/-b)
+           
+        
+        document.write(`S1 = ${S1} <br>`)
+        document.write(`S2 = ${S2} <br>`)
+        document.write(`S3 = ${S3} <br>`)
+        document.write(`S4 = ${S4} <br>`)
+        
+        </script> 
+</body>
+</html>

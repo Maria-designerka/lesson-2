@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6</title>
+    <style>
+        .receipt {
+            width: 400px;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+            margin: 20px auto;
+        }
+        h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+   <p> З клавіатури вводяться вартість товару та кількість одиниць 3 товарів. Обчислити вартість кожного товару окремо та загальну вартість. Вивести чек (як у супермаркеті) використовуючи елементи розмітки.</p>
+    <script>
+
+
+//Product 1
+        let firstProductName = prompt("Write the name of the product: ", "banana")
+        let firstProductPrice = parseFloat(prompt("Write the price of the product: ", "00,00$ ")) //price per 1 piece
+        let firstProductQuantity = prompt("Write the number of the product: ") 
+
+        let firstProductSum = firstProductPrice * firstProductQuantity  //calculate total price of the 1st product
+
+//Product 2
+        let secondProductName = prompt("Write the name of the product: ", "bottle of milk")
+        let secondProductPrice = parseFloat(prompt("Write the price of the product: ", "00,00$ ")) //price per 1 piece
+        let secondProductQuantity = prompt("Write the number of the product: ") 
+        let secondProductSum = secondProductPrice * secondProductQuantity  //calculate total price of the 2nd product
+
+//Product 3
+        let thirdProductName = prompt("Write the name of the product: ", "oreo box")
+        let thirdProductPrice = parseFloat(prompt("Write the price of the product: ", "00,00$ ")) //price per 1 piece
+        let thirdProductQuantity = prompt("Write the number of the product: ") 
+        let thirdProductSum = thirdProductPrice * thirdProductQuantity //calculate total price of the 3rd product
+
+
+//Total Price for all the products
+        let totalPrice = firstProductSum + secondProductSum + thirdProductSum
+
+
+
+       document.write(`<div class="receipt">
+    <h3>Receipt</h3>
+    <table>
+        <tr>
+            <th>Item name</th>
+            <td>${firstProductName}</td>
+        </tr>
+        <tr>
+            <th>Item quantity</th>
+            <td>${firstProductQuantity}</td>
+         </tr>
+         <tr>
+        <th>Item price</th>
+        <td>${firstProductPrice.toFixed (2)} $</td>
+    </tr>
+    <tr>
+        <th>Sum of the product</th>
+        <td>${firstProductSum.toFixed (2)} $</td>
+</tr>
+       
+<br>
+        <tr>
+            <th>Item name</th>
+            <td>${secondProductName}</td>
+        </tr>
+        <tr>
+            <th>Item quantity</th>
+            <td>${secondProductQuantity}</td>
+         </tr>
+         <tr>
+        <th>Item price</th>
+        <td>${secondProductPrice.toFixed (2)} $</td>
+    </tr>
+    <tr>
+        <th>Sum of the product</th>
+        <td>${secondProductSum.toFixed (2)} $</td>
+</tr>
+
+        <br>
+
+        <tr>
+            <th>Item name</th>
+            <td>${thirdProductName}</td>
+        </tr>
+        <tr>
+            <th>Item quantity</th>
+            <td>${thirdProductQuantity}</td>
+         </tr>
+         <tr>
+        <th>Item price</th>
+        <td>${thirdProductPrice.toFixed (2)} $</td>
+    </tr>
+    <tr>
+        <th>Sum of the product</th>
+        <td>${thirdProductSum.toFixed (2)} $</td>
+</tr>
+
+    <br>
+
+        <tr>
+            <th>Total price</th>
+            <td>${totalPrice} $</td>
+            </tr>
+        </table>
+</div>
+`)
+</script>
+</body>
+</html>

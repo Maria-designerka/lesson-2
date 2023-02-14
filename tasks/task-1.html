@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          width: 50%;
+          border-collapse: collapse;
+          table-layout: fixed;
+        }
+        td {
+            text-align: center;
+        }
+        </style>
+</head>
+<body>
+    <p>Задача 1. Знайти суму, добуток та частку двох дійсних чисел. Результат вивести у формі таблиці</p>
+    <script>
+        
+        let a = 1
+        let b = 2
+        
+        let S1 = a+b
+        let S2 = a*b
+        let S3 = a/b
+        
+        document.write(`<table>
+        <tr>
+            <th>S1</th>
+            <th>S2</th>
+            <th>S3</th>
+        </tr>
+        
+        <tr>
+            <td>${S1}</td>
+            <td>${S2}</td>
+            <td>${S3}</td>
+        </tr>
+        </table>`)
+        </script>
+</body>
+</html>
